@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/custom.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Barrierefreiheit</h1>
+					<h2>Praxis-Workshop für Redakteure</h2>
+				</section>
+				<section>
+					<h2>Alternativtexte für Grafiken</h2>
+					<ul>
+						<li>Verlinkte Grafiken</li>
+						<li>Informative Grafiken</li>
+						<li>Schmuckgrafiken</li>
+						<li>Schriftgrafiken</li>
+					</ul>
+				</section>
+				<section><h2>Informative Grafiken</h2>
+					<p>
+						<img  src="https://placekitten.com/450/300" width="440" height="300"></p>
+						<p><code>alt="Katze mit geneigtem Kopf"</code></p>
+				</section>
+				<section data-background-color="rgb(52, 53, 53)">
+					<h2>Slide 2</h2>
+					<img  src="https://placekitten.com/450/300" width="440" height="300">
+					<pre><code>
+						<img src="https://placekitten.com/450/300" width="440" height="300" 
+						alt="Katze mit geneigtem Kopf"></img>
+						</code></pre>
+				</section>
+			  </div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
